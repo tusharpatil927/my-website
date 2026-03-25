@@ -72,9 +72,12 @@ footer {
 
 <div class="box">
   <h2>About Business</h2>
-  <p>This business is running in 160+ countries.</p>
+  <p>Part time & Full time Work Business 🚀</p>
   <p>You can earn from home using your mobile.</p>
   <p>No experience needed.</p>
+
+  <p>🏠 Work from home</p>
+  <p>📈 Training support</p>
 </div>
 
 <div class="box">
@@ -83,6 +86,8 @@ footer {
   <form onsubmit="sendToWhatsapp(event)">
     <input type="text" id="name" placeholder="Enter Your Name" required>
     <input type="text" id="mobile" placeholder="Enter Mobile Number" required>
+    <input type="text" id="city" placeholder="Enter City / Village" required>
+
     <button type="submit">Submit</button>
   </form>
 
@@ -110,12 +115,13 @@ function sendToWhatsapp(event) {
 
   let name = document.getElementById("name").value;
   let mobile = document.getElementById("mobile").value;
+  let city = document.getElementById("city").value;
 
-  let message = `New Registration:%0AName: ${name}%0AMobile: ${mobile}`;
+  let message = `New Registration:%0AName: ${name}%0AMobile: ${mobile}%0ACity/Village: ${city}`;
 
   window.open(`https://wa.me/918669153323?text=${message}`, "_blank");
 }
 </script>
 
 </body>
-</html>
+  </html>
